@@ -9,7 +9,7 @@
 	<script>
 	      window.gnMathIsGoodButNotTheBestEver = {
         "ancestorOrigins": {},
-        "href": "https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/index.html",
+        "href": "https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/indexx.html",
         "origin": "hello world",
         "protocol": "https:",
         "host": "hello world",
@@ -49,7 +49,7 @@
             set(newSrc) {
               let newUrl = newSrc;
               if (newSrc.includes("html5.api.gamedistribution.com/main.min.js")) {
-                newUrl = "https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/main_min.js";
+                newUrl = "https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/main_min.js";
               }
               srcValue = newUrl;
               element.setAttribute("src", newUrl);
@@ -160,18 +160,18 @@
 </head>
 
 <body>
-	 <img id="orientation-image" src="https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/TemplateData/Orientation/orientation.png" alt="Orientation">
+	 <img id="orientation-image" src="https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/TemplateData/Orientation/orientation.png" alt="Orientation">
     <div id="orientation-warning">
         <div>Please rotate your device to the correct mode.</div>
        
     </div>
     <div id="gameContainer">
-        <img src="https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/TemplateData/logo.png" class="centered">
+        <img src="https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/TemplateData/logo.png" class="centered">
         <div class="loadingOut">
             <div class="progress-bar" id="progress-bar"></div>
         </div>
         <canvas id="unity-canvas" data-pixel-art=""></canvas>
-        <script src="https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/Build/GeometryVibes_GD_V6.loader.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/Build/GeometryVibes_GD_V6.loader.js"></script>
         <script>
             var canvas = document.querySelector("#unity-canvas");
             var progressBar = document.querySelector("#progress-bar");
@@ -179,9 +179,9 @@
             var orientationWarning = document.querySelector("#orientation-warning");
             var orientationImage = document.querySelector("#orientation-image");
             var config = {
-                dataUrl: "https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/Build/GeometryVibes_GD_V6.data.unityweb",
-                frameworkUrl: "https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/Build/GeometryVibes_GD_V6.framework.js.unityweb",
-                codeUrl: "https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/Build/GeometryVibes_GD_V6.wasm.unityweb",
+                dataUrl: "https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/Build/GeometryVibes_GD_V6.data.unityweb",
+                frameworkUrl: "https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/Build/GeometryVibes_GD_V6.framework.js.unityweb",
+                codeUrl: "https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/Build/GeometryVibes_GD_V6.wasm.unityweb",
                 streamingAssetsUrl: "StreamingAssets",
                 companyName: "GameVGames",
                 productName: "Geometry Vibes",
@@ -235,7 +235,7 @@
 
             function loadTemplateConfig() {
                 var request = new XMLHttpRequest();
-                request.open('GET', 'https://cdn.jsdelivr.net/gh/KingShedew/ecog-5@main/UNITY/geometryvibes/TemplateData/Orientation/template.json', true);
+                request.open('GET', 'https://cdn.jsdelivr.net/gh/ecog-ent/ecog-files@main/geometry-vibes/TemplateData/Orientation/template.json', true);
                 request.onreadystatechange = function() {
                     if (request.readyState === 4 && request.status === 200) {
                         var config = JSON.parse(request.responseText);
@@ -262,4 +262,3 @@
 </body>
 
 </html>
-
